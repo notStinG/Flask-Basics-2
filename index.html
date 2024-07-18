@@ -3,12 +3,13 @@
 <head>
   <meta charset="utf-8">
   <title>Homepage</title>
-  <a href="{{url_for('static', filename='style.css')}}">
+  <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
 </head>
 <body>
   <h1>WELCOME TO THE ANIMAL INFO ZOO</h1>
   <p>EDIT YOUR WEBSITE LINK ON UR SEARCH BAR COZ IM LEARNING FLASK AND I WONT REDIRECT YOU</p>
-  <p>IF YOU WANT SEE MY FAVOURITE FOOD THEN TYPE "/cluckcluck" AT THE BACK.</p>
+  <p><a href="{{ url_for('chicken') }}">Click here to see information about chickens</a></p>
+  <p><a href="{{ url_for('panda') }}">Click here to see information about pandas</a></p>
   <p>IF YOU WANT SEE A MONOCOLOURED BEAR TYPE "/boring" AT THE BACK</p>
 </body>
 </html>
